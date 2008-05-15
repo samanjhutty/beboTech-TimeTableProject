@@ -14,14 +14,8 @@ public class TableStructure {
 	
 	private int underScore() {
 		string(" ");
-		if(/*use var ifColumnAdded is 1*/) {
-			for(int i=63;i=i+10;i++)
-			table(i,"_"); 
-		}
-		else if(/*use var ifColumnAdded is 0*/) {
 		table(63,"_");   //make dynamic ie. 63
 		
-		}
 		return 0;
 	}
 
@@ -50,15 +44,7 @@ public int tableHeading() {
 		
 		verticalLine();
 		string("heading3"); //make dynamic
-		if() {
-			verticalLine();
-			string("heading3.1"); //make dynamic
-			verticalLine();
-		}
-		else {
-			continue;
-		}
-		
+	
 		verticalLine();
 		string("heading4"); //make dynamic
 		endVerticalLine();
@@ -78,14 +64,7 @@ public int tableRows(int loop_length) {
 		verticalLine();
 		string("time2"); //make dynamic
 		verticalLine();
-		if(/*use var ifColumnAdded is 1*/) {
-			verticalLine();
-			string("time2.1"); //make dynamic
-			verticalLine();
-		}
-		else if(/*use var ifColumnAdded is 0*/) {
-			continue;
-		}
+	
 		string("time3"); //make dynamic
 		endVerticalLine();
 		

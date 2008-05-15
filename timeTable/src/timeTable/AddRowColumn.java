@@ -7,7 +7,8 @@ public class AddRowColumn {
 		
 		TableStructure tableStructure=new TableStructure();
 		tableStructure.tableHeading();
-		tableStructure.tableRows(i);//make dynamic
+		tableStructure.tableRows(3);//make dynamic
+		tableStructure.tableRows(3);//make dynamic
 		
 		
 		return 0;	

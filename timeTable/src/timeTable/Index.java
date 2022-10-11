@@ -49,12 +49,18 @@ public class Index {
 		fun_gotoMainMenu();
 			break;
 			
+//		case (isLetter(menu_input)):
+//			fun_gotoMainMenu();
+//			break;
+//		
+			
 			default:System.out.print("Invalid Input\n\n");
 			fun_gotoMainMenu();
 		}
 		return 0;
 		
 	}
+
 
 	private int table() {
 	for(int i=0;i<31;i++) {

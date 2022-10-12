@@ -33,7 +33,9 @@ public class Index {
 		
 		int menu_input=scanner.nextInt();
 		switch(menu_input) {
-		case 1: table();
+		case 1: 
+			TableStructure tableStructure = new TableStructure();
+			//tableStructure.table();
 		fun_gotoMainMenu();
 			break;
 			
@@ -52,34 +54,16 @@ public class Index {
 //		case (isLetter(menu_input)):
 //			fun_gotoMainMenu();
 //			break;
-//		
 			
 			default:System.out.print("Invalid Input\n\n");
 			fun_gotoMainMenu();
 		}
 		return 0;
-		
 	}
 
-
-	private int table() {
-	for(int i=0;i<31;i++) {
-		System.out.print("_");
-	}
-	for(int i=0;i<11;i++) {
-		System.out.print("|\n");
-		
-	}
-
-	
-		
-		
-		return 0;
-	}
 	public static void main(String[] args) {
 		
 		Index index=new Index();		
-		
 		index.mainMenu();
 
 	}

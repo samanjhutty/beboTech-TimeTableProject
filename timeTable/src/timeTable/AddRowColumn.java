@@ -1,27 +1,26 @@
 package timeTable;
 
 public class AddRowColumn {
+	int ifColumnAdded=0;
+	
 	private int passingRows() {
 		TableStructure tableStructure=new TableStructure();
-		tableStructure.tableRows(3);
-		tableStructure.tableRows(1);
+		tableStructure.tableHeading();
+		tableStructure.tableRows(3);//make dynamic
+		tableStructure.tableRows(1);// make dynamic
 		
-		return 0;
-		
+		return 0;	
 	}
 	
-	
-	
 	public int addRow() {
-		
 		passingRows();
-		
-		
 		
 		return 0;
 	}
 	
 	public int  addColumn() {
+		ifColumnAdded=1;
+		
 		
 		
 		
@@ -29,18 +28,3 @@ public class AddRowColumn {
 	}
 
 }
-/*
-
-	private void string( String stringInput) {
-		System.out.print(stringInput);
-	}
-	
-	private void underScore(int tableInput, String stringInput) {
-		table(tableInput,stringInput);
-	}
-	
-	private void verticalLine(int tableInput) {
-		table(tableInput,"|\t");
-	}
-	
-*/

@@ -12,38 +12,57 @@ public class TableStructure {
 	return 0;
 	}
 	
+	private int underScore() {
+		string(" ");
+		table(63,"_");
+		
+		return 0;
+	}
+
+	private void string( String stringInput) {
+		System.out.print(stringInput);
+	}
+	
+	public void verticalLine() {
+		table(1,"\t|\t");
+	}
+	public void newVerticalLine() {
+		table(1,"\n|\t");
+	}
+	public void endVerticalLine() {
+		table(1,"\t|\t\n");
+	}
+	
 public int showTable() {
 		
-		System.out.print(" ");
-		table(63,"_");
-		table(1,"\n|\t");
-		System.out.print(" ");
-		table(1,"\t|\t");
-		System.out.print("Tims1");
-		table(1,"\t|\t");
-		System.out.print("Time2");
-		table(1,"\t|\t");
-		System.out.print("time3");
-		table(1,"\t|\t\n");
+		underScore();
+		newVerticalLine();
+		string(" ");
+		verticalLine();
+		string("time1");
+		verticalLine();
+		string("time2");
+		verticalLine();
+		string("time3");
+		endVerticalLine();
 		return 0;
 	}
 
 public int tableRows(int loop_length) {
 	for(int i=1;i<=loop_length;i++) {
-		System.out.print(" ");
-		table(63,"_");
-		table(1,"\n|\t");
-		System.out.print(" ");
-		table(1,"\t|\t");
-		System.out.print("Time1");
-		table(1,"\t|\t");
-		System.out.print("Time2");
-		table(1,"\t|\t");
-		System.out.print("time3");
-		table(1,"\t|\t\n");
+		underScore();
+		newVerticalLine();
+		string(" ");
+		verticalLine();
+		string("time3");
+		verticalLine();
+		string("time2");
+		verticalLine();
+		string("time3");
+		endVerticalLine();
 		
 	}
-	table(63,"_");
+	underScore();
 	
 	return 0;
 }

@@ -10,6 +10,8 @@ public class AddRowColumn {
 		
 	}
 	
+	
+	
 	public int addRow() {
 		
 		passingRows();
@@ -27,3 +29,18 @@ public class AddRowColumn {
 	}
 
 }
+/*
+
+	private void string( String stringInput) {
+		System.out.print(stringInput);
+	}
+	
+	private void underScore(int tableInput, String stringInput) {
+		table(tableInput,stringInput);
+	}
+	
+	private void verticalLine(int tableInput) {
+		table(tableInput,"|\t");
+	}
+	
+*/

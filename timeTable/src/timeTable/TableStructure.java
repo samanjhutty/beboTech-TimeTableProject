@@ -45,12 +45,13 @@ public int showTable() {
 		verticalLine();
 		string("time3");
 		endVerticalLine();
+		underScore();
 		return 0;
 	}
 
 public int tableRows(int loop_length) {
 	for(int i=1;i<=loop_length;i++) {
-		underScore();
+		
 		newVerticalLine();
 		string(" ");
 		verticalLine();
@@ -60,10 +61,9 @@ public int tableRows(int loop_length) {
 		verticalLine();
 		string("time3");
 		endVerticalLine();
+		underScore();
 		
 	}
-	underScore();
-	
 	return 0;
 }
 }

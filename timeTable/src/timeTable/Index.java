@@ -11,8 +11,7 @@ public class Index {
 		int get_input=scanner.nextInt();
 		
 		if(get_input==1) {
-			Index index= new Index();
-			index.mainMenu();
+			mainMenu();
 		}
 		else if(get_input==0){
 			return 0;
@@ -23,9 +22,10 @@ public class Index {
 		return 0;
 	}
 	
+	
 	private int mainMenu() {
 
-		System.out.print("1. Create\n"
+		System.out.print("1. Add\n"
 				+ "2. Update\n"
 				+ "3. Delete\n"
 				+ "4. Show Table\n\n"+
@@ -33,10 +33,8 @@ public class Index {
 		
 		int menu_input=scanner.nextInt();
 		switch(menu_input) {
-		case 1: 
-			TableStructure tableStructure = new TableStructure();
-			//tableStructure.table();
-		fun_gotoMainMenu();
+		case 1:rowColumn();
+			fun_gotoMainMenu();
 			break;
 			
 		case 2:System.out.print("2");
@@ -47,7 +45,9 @@ public class Index {
 		fun_gotoMainMenu();
 			break;
 			
-		case 4:System.out.print("4");
+		case 4:TableStructure tableStructure = new TableStructure();
+		tableStructure.showTable();
+		tableStructure.tableRows(3);
 		fun_gotoMainMenu();
 			break;
 			
@@ -56,6 +56,27 @@ public class Index {
 //			break;
 			
 			default:System.out.print("Invalid Input\n\n");
+			fun_gotoMainMenu();
+		}
+		return 0;
+	}
+	
+	private int rowColumn() {
+		
+		System.out.print("\nTo add row press 1, for column press 2: ");
+		int rcInput=scanner.nextInt();
+		AddRowColumn tableStructure = new AddRowColumn();
+		
+		if(rcInput==1) {
+			tableStructure.addRow();
+			fun_gotoMainMenu();
+		}
+		else if(rcInput==2) {
+			tableStructure.addColumn();
+			fun_gotoMainMenu();
+		}
+		else if(rcInput!=1 && rcInput!=2){
+			System.out.print("Invalid Input");
 			fun_gotoMainMenu();
 		}
 		return 0;

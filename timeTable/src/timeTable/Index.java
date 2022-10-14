@@ -46,7 +46,7 @@ public class Index {
 			break;
 			
 		case 4:TableStructure tableStructure = new TableStructure();
-		tableStructure.showTable();
+		tableStructure.tableHeading();
 		tableStructure.tableRows(3);
 		fun_gotoMainMenu();
 			break;

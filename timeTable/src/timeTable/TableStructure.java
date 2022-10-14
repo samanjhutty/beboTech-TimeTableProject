@@ -43,7 +43,7 @@ public int tableRows(int loop_length) {
 		table(1,"\t|\t\n");
 		
 	}
-	table(65,"_");
+	table(63,"_");
 	
 	return 0;
 }

@@ -1,27 +1,23 @@
 package timeTable;
 
 public class AddRowColumn {
-	int ifColumnAdded=0;
-	
-	private int passingRows() {
+	Index index=new Index();
+	int rlength;
+	 AddRowColumn() {
 		
-		TableStructure tableStructure=new TableStructure();
-		tableStructure.tableHeading();
-		tableStructure.tableRows(3);//make dynamic
-		tableStructure.tableRows(3);//make dynamic
-		
-		
-		return 0;	
+		rlength=index.row_length;
 	}
 	
 	public int addRow() {
-		passingRows();
+		rlength=0;
+		rlength++;
+		new ShowTable(rlength);
 		
-		return 0;
+		
+		return rlength;	
 	}
 	
 	public int  addColumn() {
-		ifColumnAdded=1;
 		
 		
 		

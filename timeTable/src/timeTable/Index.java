@@ -4,6 +4,7 @@
 
 public class Index {
 	Scanner scanner =new Scanner(System.in);
+	int row_length=0;
 	
 	private int fun_gotoMainMenu() {
 		
@@ -45,9 +46,10 @@ public class Index {
 		fun_gotoMainMenu();
 			break;
 			
-		case 4:TableStructure tableStructure = new TableStructure();
-		tableStructure.tableHeading();
-		tableStructure.tableRows(3);
+		case 4:AddRowColumn addRowColumn= new AddRowColumn();
+		row_length=addRowColumn.rlength;
+		
+			new ShowTable(row_length);
 		fun_gotoMainMenu();
 			break;
 			
@@ -65,14 +67,14 @@ public class Index {
 		
 		System.out.print("\nTo add row press 1, for column press 2: ");
 		int rcInput=scanner.nextInt();
-		AddRowColumn tableStructure = new AddRowColumn();
+		AddRowColumn addRowColumn = new AddRowColumn();
 		
 		if(rcInput==1) {
-			tableStructure.addRow();
+			addRowColumn.addRow();
 			fun_gotoMainMenu();
 		}
 		else if(rcInput==2) {
-			tableStructure.addColumn();
+			addRowColumn.addColumn();
 			fun_gotoMainMenu();
 		}
 		else if(rcInput!=1 && rcInput!=2){

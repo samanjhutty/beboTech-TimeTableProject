@@ -4,19 +4,15 @@ package timeTable;
 public class TableStructure {
 	
 	
-	private int table(int loop_length , String loop_print) {
+	private void table(int loop_length , String loop_print) {
 		int loop;
 		for(loop=1;loop<=loop_length;loop++)
-			System.out.print(loop_print);
-		
-	return 0;
-	}
+			System.out.print(loop_print);	
+		}
 	
-	private int underScore() {
+	private void underScore() {
 		string(" ");
 		table(63,"_");   //make dynamic ie. 63
-		
-		return 0;
 	}
 
 	private void string( String stringInput) {
@@ -33,7 +29,7 @@ public class TableStructure {
 		table(1,"\t|\t\n");
 	}
 	
-public int tableHeading() {
+public void tableHeading() {
 		
 		underScore();
 		newVerticalLine();
@@ -50,10 +46,9 @@ public int tableHeading() {
 		endVerticalLine();
 		
 		underScore();
-		return 0;
 	}
 
-public int tableRows(int loop_length) {
+public void tableRows(int loop_length) {
 	for(int i=1;i<=loop_length;i++) {
 		
 		newVerticalLine();
@@ -68,9 +63,7 @@ public int tableRows(int loop_length) {
 		string("time3"); //make dynamic
 		endVerticalLine();
 		
-		underScore();
-		
+		underScore();	
 	}
-	return 0;
 }
 }

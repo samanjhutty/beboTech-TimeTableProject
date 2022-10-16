@@ -23,8 +23,7 @@ public class Index {
 		return 0;
 	}
 	
-	
-	private int mainMenu() {
+	private void mainMenu() {
 
 		System.out.print("1. Add\n"
 				+ "2. Update\n"
@@ -48,8 +47,9 @@ public class Index {
 			
 		case 4:AddRowColumn addRowColumn= new AddRowColumn();
 		row_length=addRowColumn.rlength;
+		System.out.print(row_length);
 		
-			new ShowTable(row_length);
+//			new ShowTable(row_length);
 		fun_gotoMainMenu();
 			break;
 			
@@ -60,10 +60,9 @@ public class Index {
 			default:System.out.print("Invalid Input\n\n");
 			fun_gotoMainMenu();
 		}
-		return 0;
 	}
 	
-	private int rowColumn() {
+	private void rowColumn() {
 		
 		System.out.print("\nTo add row press 1, for column press 2: ");
 		int rcInput=scanner.nextInt();
@@ -81,7 +80,6 @@ public class Index {
 			System.out.print("Invalid Input");
 			fun_gotoMainMenu();
 		}
-		return 0;
 	}
 
 	public static void main(String[] args) {

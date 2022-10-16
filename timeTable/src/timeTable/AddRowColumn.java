@@ -9,9 +9,13 @@ public class AddRowColumn {
 	}
 	
 	public int addRow() {
-		rlength=0;
 		rlength++;
-		new ShowTable(rlength);
+		System.out.print(rlength);
+		
+//		new ShowTable(rlength);
+		
+		int dummyvar=0;
+		rlength+=dummyvar;
 		
 		
 		return rlength;	
